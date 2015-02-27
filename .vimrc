@@ -66,7 +66,7 @@ if has('vim_starting')
    set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -79,6 +79,8 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundle 'flazz/vim-colorschemes'
+
+call neobundle#end()
 
 filetype plugin indent on     " Required!
  "
